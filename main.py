@@ -14,7 +14,7 @@ import random
 import time
 import sys
 
-R = (random.randrange(1, 8))
+R = (random.randrange(1, 5))
 #makes the scotland 20 times
 for i in range(20):
   #ASSIGNS A RANDOM NUMBER FROM 1 TO 100 (101 just sets the cap to below 101)
@@ -24,13 +24,13 @@ for i in range(20):
   #ASSIGNS SYMBOL TO CERTAIN NUMBER GENERATED FOR THE FIRST VARIABLE
   #hahaha im evil and this is making it harder for them 2 win hahaha
   Y = 2
-  if x == z && x == y && R in range(1, 7):
-    if z < 50:
-      z = (random.randrange(50, 101))
-      Y = 1
-    else:
-      z = (random.randrange(1, 50))
-         
+  #if x == z and x == y and R == 1 or 2 or 3 or 4 or 5 or 6:
+   # if z < 50:
+     # z = (random.randrange(50, 101))
+     # Y = 1
+    #else:
+     # z = (random.randrange(1, 50))
+      #Y = 1
   if x in range(1, 11):
     xR = ("[🍇]")
   if x in range(11, 21):
@@ -118,16 +118,25 @@ for i in range(20):
  # del Line6
   #del Line7
  # del Line2b
-  #writes the lines for the actual result
+ 
+  #change the last number +1 in the "range(1, 12)"
+  #to change the chances for the system to actually let wins
+  if xR == yR and xR == zR and R in range(1, 4):
+    if xR == ("[🍇]"):
+      zR = ("[🍒]")
+      Y = 1
+    else:
+      zR = ("[🍇]")
+      Y = 1
   print("")
   print("")
   print("")
   print("")
   print("")
   print("")
-  print("This is the Scotland")
-  print("which stands for")
-  print("Scrolling Contraption O' The Lifting Ability (of) Non-assured Donations")
+  print("Scotland")
+  print("")
+  print("")
   print("")
   print(R)
   print("")
@@ -137,10 +146,10 @@ for i in range(20):
   print("")
   print("")
   print("")
-  Line1 = ("3 matching fruits is $500")
-  Line2 = ("3 matching dollars is $2000")
-  Line2b = ("3 matching diamonds is $3000")
-  Line3 = ("3 matching '7's is $7777")
+  Line1 = ("3 matching fruits is 4th reward")
+  Line2 = ("3 matching dollars is 3rd reward")
+  Line2b = ("3 matching diamonds is 2nd reward")
+  Line3 = ("3 matching '7's is 1st reward")
   Line4 = ("")
   Line5 = ("|======================|")
   Line6 = (xR, yR, zR)
@@ -154,23 +163,25 @@ for i in range(20):
   print(Line6)
   print(Line7)
   print("")
-  L2 = ("Loser you are loser hahaha")
-  L1 = ("Wow you were so close how 'bout you spin it 1 more time")
-  L3 = ("Aw darn what a bummer you should go again since your this lucky")
-  C = ("3 fruits is 0.009%, 3 Dollas is 0.000125%, 3 diamonds is 0.000008%, 3 '7's is 0.000001%")
+  L2 = ("")
+  L1 = ("1")
+  L3 = ("2")
+  C = ("3 fruits is 0.1%, 3 Dollas is 0.08%, 3 diamonds is 0.01%, 3 '7's is 0.001%")
   if xR == yR:
     if yR == zR:
       print("winner winner chicken dinner 🤑")
     else:
-      print(L1)
+      if Y == 2:
+        print(L1)
   else:
     if xR == zR:
       print(L2)
     else: print(L2)
+    
   if Y == 1:
     print(L3)
   print("")
-  print("Tickets cost $30")
+  print("")
   time.sleep(0.1)
 
 #doesnt work at all 👇  
